@@ -29,8 +29,8 @@ const translations = {
 }
 
 // equivalente ao request.args.get('lang')
-let lang = Astro.url.searchParams.get('lang') || 'pt'
-if (!translations[lang]) lang = 'pt'
+let lang = Astro.url.searchParams.get('lang') || 'en'
+if (!translations[lang]) lang = 'en'
 
 const t = translations[lang]
 ---
