@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+<title id="title">GreenArch — arco verde</title>
+<defs><linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A3F2BD"/><stop offset="1" stop-color="#27A86C"/></linearGradient></defs>
+<rect width="128" height="128" rx="27" fill="#071B17"/>
+<path fill="url(#green)" fill-rule="evenodd" d="M20 102V45c0-13 10-23 23-23h42c13 0 23 10 23 23v57H84V53c0-11-9-20-20-20S44 42 44 53v49H20Zm32 0V58c0-7 5-12 12-12s12 5 12 12v44H52Z"/>
+<path d="M15 102h98v7H15z" fill="#58CE91"/>
+<path d="M24 18h80v7H24z" fill="#A3F2BD"/>
+</svg>
