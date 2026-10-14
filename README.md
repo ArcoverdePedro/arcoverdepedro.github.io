@@ -1,19 +1,31 @@
 # GreenArch — Portfólio de Pedro Arcoverde
 
-Portfólio bilíngue com **Astro 5**, identidade verde-escura, fundo animado em CSS e layout responsivo, sem frameworks de UI adicionais.
+Site estático bilíngue desenvolvido **somente com HTML e CSS**. Sem JavaScript, Astro, Node.js, build ou dependências.
 
-## Rodar localmente
+## Arquivos
 
-```bash
-npm ci
-npm run dev
+- `index.html`: página em português
+- `en/index.html`: página em inglês
+- `css/style.css`: design e animações compartilhados
+- `public/favicon.svg`: marca GreenArch
+- `public/profile.jpg`: fotografia de perfil
+- `CNAME`: domínio `greenarch.com.br`
+- `.nojekyll`: impede processamento pelo Jekyll
+
+## Execução local
+
+Abra `index.html` em um servidor estático simples (não diretamente via `file://`, pois os caminhos dos assets começam em `/`).
+
+Exemplo com Python, sem instalação de pacotes:
+
+```sh
+python3 -m http.server 8000
 ```
 
-## Build
+Abra `http://localhost:8000/` e `http://localhost:8000/en/`.
 
-```bash
-npm run build
-npm run preview
-```
+## Publicação
 
-A página em português está em `/` e a versão inglesa em `/en/`. Edite conteúdos e estilos compartilhados em `src/components/Portfolio.astro`. Substitua `public/profile.jpg` para trocar a foto. O domínio `greenarch.com.br` e o deploy do GitHub Pages foram preservados. As animações respeitam a preferência de movimento reduzido. Os contatos são links reais (e-mail, GitHub e LinkedIn); nenhum backend é necessário.
+O GitHub Actions publica diretamente os arquivos na raiz do repositório, sem etapa de compilação. O GitHub Pages deve permanecer configurado com **Source: GitHub Actions**. As URLs PT e EN são caminhos independentes e não exigem JavaScript.
+
+Para atualizar os textos, edite as duas páginas HTML. Para alterar o visual, edite apenas `css/style.css`.
