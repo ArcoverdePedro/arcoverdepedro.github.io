@@ -9,7 +9,7 @@ Site estático bilíngue desenvolvido **somente com HTML e CSS**. Sem JavaScript
 - `css/style.css`: design e animações compartilhados
 - `public/favicon.svg`: marca GreenArch
 - `public/profile.jpg`: fotografia de perfil original (usada no `og:image`)
-- `public/profile-{360,720}.{avif,webp,jpg}`: versões otimizadas exibidas no site
+- `public/profile-{360,540,720}.webp`: versões otimizadas exibidas no site
 - `CNAME`: domínio `greenarch.com.br`
 - `.nojekyll`: impede processamento pelo Jekyll
 
